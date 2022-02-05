@@ -10,7 +10,7 @@
 		"schema": [
 			{
 				"name": "Saledate",
-				"type": "nvarchar"
+				"type": "date"
 			},
 			{
 				"name": "saleItem",
@@ -22,7 +22,8 @@
 			},
 			{
 				"name": "quantity",
-				"type": "nvarchar"
+				"type": "int",
+				"precision": 10
 			},
 			{
 				"name": "filename",
@@ -31,7 +32,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "sales_bad"
+			"table": "sales"
 		}
 	}
 }
