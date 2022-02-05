@@ -1,0 +1,12 @@
+{
+	"name": "AzureSynapseAnalytics",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=sunilsynapse99.sql.azuresynapse.net;initial catalog=sunildsqlpool99;user id=sqladminuser",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQENGNTBEMEYwLTNENDgtNDM3RC04QTE4LTQ4QTRBNjVBRUU5Ml85ZGJmODQ5OS00MzVjLTRhYjUtYTk0ZS01ODQ1ZmFjOGVjNWIiDQp9"
+		}
+	}
+}
