@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "dl_data_input_ds",
+						"referenceName": "dl_data_input_folder_ds",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
@@ -68,10 +68,6 @@
 									"storeSettings": {
 										"type": "AzureBlobFSReadSettings",
 										"recursive": true,
-										"wildcardFileName": {
-											"value": "@item().name",
-											"type": "Expression"
-										},
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -96,7 +92,13 @@
 							"inputs": [
 								{
 									"referenceName": "dl_data_input_ds",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
