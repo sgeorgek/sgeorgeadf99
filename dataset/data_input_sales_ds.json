@@ -2,7 +2,7 @@
 	"name": "data_input_sales_ds",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage",
+			"referenceName": "AzureDataLakeStorageKV",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
