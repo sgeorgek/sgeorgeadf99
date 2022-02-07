@@ -19,7 +19,7 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
-							"fileListPath": "data/input/Department.csv",
+							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -43,7 +43,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "dl_data_input_ds",
+						"referenceName": "ds_data_input_dept_ds",
 						"type": "DatasetReference"
 					}
 				],
