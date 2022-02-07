@@ -2,7 +2,7 @@
 	"name": "synapse_salesbad_ds",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureSynapseAnalytics",
+			"referenceName": "AzureSynapseAnalyticsKV",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
