@@ -76,7 +76,8 @@
 								},
 								"sink": {
 									"type": "SqlDWSink",
-									"allowCopyCommand": true,
+									"writeBehavior": "Insert",
+									"sqlWriterUseTableLock": false,
 									"tableOption": "autoCreate",
 									"disableMetricsCollection": false
 								},
@@ -87,6 +88,14 @@
 										"type": "LinkedServiceReference"
 									},
 									"path": "synapse"
+								},
+								"translator": {
+									"type": "TabularTranslator",
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
 								}
 							},
 							"inputs": [
