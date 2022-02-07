@@ -2,7 +2,7 @@
 	"name": "synapse_sales_ds",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureSynapseAnalytics",
+			"referenceName": "AzureSynapseAnalyticsKV",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
